@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a2d462fdca.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  
+  <body>
+    <section id="landing">
+      <nav>
+        <div class="nav__container">
+          <img class="logo" src="/assets/Library.svg" alt="" />
+          <ul class="nav__links">
+            <li><a href="#" class="nav__link">Home</a></li>
+            <li><a href="#" class="nav__link">About</a></li>
+            <li><a href="#" class="nav__link nav__link--primary">Mangas</a></li>
+          </ul>
+          <button class="button__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button
+              class="button__menu button__menu--close"
+              onclick="closeMenu()"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a class="menu__link" href="#" onclick="closeMenu()">Home</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link" href="#features" onclick="closeMenu()">Mangas</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link no-cursor" onclick="closeMenu()">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <div class="header__container">
+          <div class="header__description">
+            <h1>America's most visited online manga platform</h1>
+            <h2>
+              Browse over 1,000+ titles inlcuding
+              <span class="purple">New Releases!</span>
+            </h2>
+            <a href="#features">
+            <button class="btn">Browse Books</button>
+            </a>
+          </div>
+          <figure class="header__image--wrapper">
+            <img class="header__image" src="/assets/Undraw_Books.svg" alt="" />
+          </figure>
+        </div>
+      </header>
+    </section>
+
+    <main>
+      <section id="highlights">
+        <div class="container">
+          <div class="row">
+            <h2 class="section__title">
+              Why choose <span class="purple">Library?</span>
+            </h2>
+          </div>
+          <div class="highlight__wrapper">
+            <div class="highlight">
+              <div class="highlight__image">
+                <i class="fa-solid fa-bolt-lightning"></i>
+              </div>
+              <h3 class="highlight__sub-title">Easy and Quick</h3>
+              <p class="highlight__para">
+                Get access to the book you purchased online instantly
+              </p>
+            </div>
+            <div class="highlight">
+              <div class="highlight__image">
+                <i class="fa-solid fa-book-open"></i>
+              </div>
+              <h3 class="highlight__sub-title">10,000+ Books</h3>
+              <p class="highlight__para">
+                Library has books in all your favorite categories
+              </p>
+            </div>
+            <div class="highlight">
+              <div class="highlight__image">
+                <i class="fa-solid fa-tags"></i>
+              </div>
+              <h3 class="highlight__sub-title">Affordable</h3>
+              <p class="highlight__para">
+                Get your hands on popular books for as little as $10
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features">
+        <div class="container">
+          <div class="row">
+            <div class="section__title">
+              <h2>5-Star Featured <span class="purple">Manga Series</span></h2>
+              <div class="books">
+                <div class="book">
+                  <figure class="book__image--wrapper">
+                    <img
+                      class="book__image"
+                      src="assets/deathnote.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="book__title">Death Note</div>
+                  <div class="book__ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="book__price">
+                    <span class="book__price--normal">$59.95</span> $14.95
+                  </div>
+                </div>
+                <div class="book">
+                  <figure class="book__image--wrapper">
+                    <img class="book__image" src="/assets/naruto.jpg" alt="" />
+                  </figure>
+                  <div class="book__title">Naruto</div>
+                  <div class="book__ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="book__price">
+                    <span class="book__price--normal">$59.95</span> $14.95
+                  </div>
+                </div>
+                <div class="book">
+                  <figure class="book__image--wrapper">
+                    <img class="book__image" src="/assets/bleach.jpg" alt="" />
+                  </figure>
+                  <div class="book__title">Bleach</div>
+                  <div class="book__ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="book__price">
+                    <span class="book__price--normal">$59.95</span> $14.95
+                  </div>
+                </div>
+                <div class="book">
+                  <figure class="book__image--wrapper">
+                    <img
+                      class="book__image"
+                      src="/assets/fullmetal-alchemist.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="book__title">Fullmetal Alchemist</div>
+                  <div class="book__ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="book__price">
+                    <span class="book__price--normal">$59.95</span> $14.95
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="recent">
+        <div class="container">
+          <div class="row">
+            <div class="section__title">
+              <h2>New/Anticipated <span class="purple">Releases</span></h2>
+              <div class="books">
+                <div class="book">
+                  <figure class="book__image--wrapper">
+                    <img
+                      class="book__image"
+                      src="/assets/jujutsukaisen.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="book__title">Jujutsu Kaisen Vol.17</div>
+                  <div class="book__ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="book__price">
+                    <span class="book__price--normal">$59.95</span> $14.95
+                  </div>
+                </div>
+                <div class="book">
+                  <figure class="book__image--wrapper">
+                    <img
+                      class="book__image"
+                      src="/assets/konosuba.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="book__title">
+                    Konosuba: Gods Blessing On This Wonderful World! Vol.1
+                  </div>
+                  <div class="book__ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="book__price">
+                    <span class="book__price--normal">$59.95</span> $14.95
+                  </div>
+                </div>
+                <div class="book">
+                  <figure class="book__image--wrapper">
+                    <img class="book__image" src="/assets/berzerk.jpg" alt="" />
+                  </figure>
+                  <div class="book__title">Berzerk Deluxe Vol.11</div>
+                  <div class="book__ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="book__price">
+                    <span class="book__price--normal">$59.95</span> $14.95
+                  </div>
+                </div>
+                <div class="book">
+                  <figure class="book__image--wrapper">
+                    <img class="book__image" src="/assets/dbs.jpg" alt="" />
+                  </figure>
+                  <div class="book__title">DragonBall Super Vol.16</div>
+                  <div class="book__ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="book__price">
+                    <span class="book__price--normal">$59.95</span> $14.95
+                  </div>
+                </div>
+                <div class="book">
+                  <figure class="book__image--wrapper">
+                    <img class="book__image" src="/assets/dxd.jpg" alt="" />
+                  </figure>
+                  <div class="book__title">Highschool DxD Vol.2</div>
+                  <div class="book__ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="book__price">
+                    <span class="book__price--normal">$59.95</span> $14.95
+                  </div>
+                </div>
+                <div class="book">
+                  <figure class="book__image--wrapper">
+                    <img class="book__image" src="/assets/mdud.jpg" alt="" />
+                  </figure>
+                  <div class="book__title">My Dress Up Darling Vol.6</div>
+                  <div class="book__ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="book__price">
+                    <span class="book__price--normal">$59.95</span> $14.95
+                  </div>
+                </div>
+                <div class="book">
+                  <figure class="book__image--wrapper">
+                    <img
+                      class="book__image"
+                      src="/assets/bleach anniverszary.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="book__title">
+                    Bleach 20th Anniversary Edition Vol.11
+                  </div>
+                  <div class="book__ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="book__price">
+                    <span class="book__price--normal">$59.95</span> $14.95
+                  </div>
+                </div>
+                <div class="book">
+                  <figure class="book__image--wrapper">
+                    <img
+                      class="book__image"
+                      src="/assets/liminal zone.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="book__title">The Liminal Zone</div>
+                  <div class="book__ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="book__price">
+                    <span class="book__price--normal">$59.95</span> $14.95
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="explore">
+        <div class="container">
+          <div class="row explore__row">
+            <h2>Explore more <span class="purple">Titles</span></h2>
+            <button class="btn">Browse titles</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row explore__row">
+          <a href="#">
+            <figure class="footer__logo">
+              <img
+                class="footer__logo--image"
+                src="/assets/Library.svg"
+                alt=""
+              />
+            </figure>
+          </a>
+          <div class="footer__links">
+            <a href="#landing" class="footer__link">Home</a>
+            <a href="" class="footer__link no-cursor">About</a>
+            <a href="#features" class="footer__link">Mangas</a>
+            <a href="" class="footer__link no-cursor">Contact</a>
+          </div>
+          <div class="footer__copyright">Copyright &copy; 2022 Library</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -45,11 +45,11 @@ p{
 
 .nav__container {
     width: 100%;
+    max-width: 1200px;
     padding: 0 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -510,6 +510,14 @@ footer {
     font-size: 60px;
     color: #7342d6;
   }
+
+  .books__loading--spinner {
+    display: none !important;
+  }
+  
+  .books__loading  .books__loading--spinner {
+    display: block !important;
+  }
   
   .fa-spinner {
     animation: rotate 600ms infinite linear;
@@ -545,6 +553,26 @@ footer {
   
     .book {
       width: 50%;
+    }
+  }
+
+  
+/* SMALL PHONES, LARGE SMARTPHONES */
+@media (max-width: 550px) {
+    .btn__menu {
+      display: block;
+    }
+  
+    .nav__links {
+      display: none;
+    }
+  
+    .highlight {
+      width: 100%;
+    }
+  
+    .highlight:not(:last-child) {
+      margin-bottom: 24px;
     }
   }
   
